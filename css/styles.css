@@ -12,6 +12,10 @@ header {
     font-family: 'Permanent Marker', cursive;
 }
 
+body {
+    background-color: #dddfe6
+}
+
 header h1{
     font-size: 2em;
 }
@@ -41,4 +45,74 @@ header nav {
     background-image:linear-gradient(to bottom,transparent 0 65%, #b6e4b4 65% 100%);
 }
 
-/* prueba */
+
+
+.destacados, .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+
+.principal {
+    padding-top: 5%;
+    width: 80%;
+    margin: auto;
+}
+
+
+body h4{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.8em;
+    background-size: 100% 83%;
+    background-image:linear-gradient(to bottom,transparent 0 65%, #b6e4b4 65% 100%);
+    max-width: fit-content;
+}
+
+p.cat-titulo {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    background-size: 100% 83%;
+    background-image:linear-gradient(to bottom,transparent 0 65%, #e690cc 65% 100%);  
+    max-width: fit-content;
+}
+
+.producto {
+    height: 340px;
+    padding-top: 6%;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.producto img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border: 7px solid #dbb4d1;
+    border-radius: 12px;
+}
+
+.producto:hover img {
+    border: 7px solid #817bcf;
+    overflow: hidden;
+}
+
+#categorias ul{
+    list-style: none;
+    display: flex;
+}
+
+#categorias ul li{
+    margin: 2%;
+}
+
+#categorias a {
+    text-decoration: none;
+    color:#817bcf;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.8em;
+    border: 2px solid #817bcf;
+    border-radius: 12px;
+    padding: 2px;
+    margin: 5px;
+}
