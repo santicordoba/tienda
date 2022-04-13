@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: #d8b6e9;
     width: 100%;
@@ -13,7 +17,7 @@ header {
 }
 
 body {
-    background-color: #dddfe6
+    background-color: #dddfe6;
 }
 
 header h1{
@@ -57,6 +61,7 @@ header nav {
     padding-top: 5%;
     width: 80%;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 
@@ -74,18 +79,19 @@ p.cat-titulo {
     background-size: 100% 83%;
     background-image:linear-gradient(to bottom,transparent 0 65%, #e690cc 65% 100%);  
     max-width: fit-content;
+    margin-top: 2%;
 }
 
 .producto {
-    height: 340px;
-    padding-top: 6%;
+    height: 440px;
+    padding-top: 3%;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: bolder;
     font-size: 1.2em;
 }
 
 .producto img {
-    width: 100%;
+    width: 80%;
     height: 80%;
     object-fit: cover;
     border: 7px solid #dbb4d1;
@@ -100,6 +106,7 @@ p.cat-titulo {
 #categorias ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #categorias ul li{
@@ -115,4 +122,54 @@ p.cat-titulo {
     border-radius: 12px;
     padding: 2px;
     margin: 5px;
+}
+
+.nosotros {
+    display: flex;
+    align-items: center;
+}
+
+.nosotros img {
+    width: 80%;
+    height: 80%;
+}
+
+p.description {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.4em;
+    padding-left: 1%;
+}
+
+footer {
+    background-color: #d8b6e9;
+    width: 100%;
+    padding: 2%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Permanent Marker', cursive;
+    color: black
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color:#766088;
+}
+
+footer ul {
+    margin: auto;
+    display: block;
+}
+
+footer ul li{
+    padding: 0.5em;
+    display: inline-block;
+}
+
+footer i {
+    margin-right: 1%;
 }
