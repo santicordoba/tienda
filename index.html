@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/e20f85be7b.js" crossorigin="anonymous"></script>
     <title>Inicio - TakuGames</title>
 </head>
@@ -23,6 +24,10 @@
             <a href="productos.html">Productos</a>
             <a href="contacto.html">Contacto</a>
         </div>
+        <input type="checkbox" id="btn-menu">
+        <label class="menu" for="btn-menu">
+            <span><i class="fa-solid fa-bars"></i></span>
+        </label>
         </nav>
     </header>
     <div class="principal">
@@ -81,27 +86,6 @@
 
         <p><i class="fa-solid fa-envelope"></i>contacto@tiendataku.com</p>
 
-    </footer>
-    <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 8000); // Change image every 8 seconds
-        }
-        </script>    
+    </footer>  
 </body>
 </html>

@@ -181,6 +181,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   margin-bottom: 2%;
+  box-shadow: 0 1em 1em #d8b6e9;
 }
 
 /* The dots/bullets/indicators */
@@ -198,13 +199,68 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.menu {
+    height: 45px;
+    width: 45px;
+    background-color: #817bcf;
+    border-radius: 45px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.menu span {
+    width: 100%;
+}
+
+.menu i {
+    color: white;
+    line-height: 45px;
+}
+
+#btn-menu{
+    display: none;   
+}
+
+@media (max-width: 720px) {
+    .menu {
+        display: inline-flex;
+    }
+
+    .enlaces {
+        display: none;
+
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    .principal h4 {
+        font-size: 1.1em;
+    }
+
+    .destacados {
+        height: 100%;
+    }
+
+    .destacados .producto{
+        width: 100%;
+    }
+
+    .nosotros {
+        display: block;
+    }
+
+    .nosotros p {
+        font-size: 1em;
+    }
 }
