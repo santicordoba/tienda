@@ -240,6 +240,10 @@ img {vertical-align: middle;}
     width: 75%;
 }
 
+#btn-menu {
+    display: none;
+}
+
 @media (max-width: 720px) {
 
 
@@ -272,7 +276,7 @@ img {vertical-align: middle;}
     }
 
     .nav__responsive-li{
-        font-size: 1.3em;
+        font-size: 1.5em;
         width: 100%;
         padding: 9px 20px;
     }
@@ -285,10 +289,8 @@ img {vertical-align: middle;}
         text-decoration: none;
         color: black;
         text-transform: uppercase;
-    }
-
-    .nav__responsive-ul:hover > .nav__li-container {
-        top:-27px;
+        background-size: 100% 83%;
+        background-image:linear-gradient(to bottom,transparent 0 65%, #ffe164 65% 100%);
     }
 
     .principal {

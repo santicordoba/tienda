@@ -13,13 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/e20f85be7b.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn-menu").click(function(){
+                console.log("hola mundo");
+                var checkBox = document.getElementById("btn-menu");
+                if(checkBox.checked == true){
+                    $(".nav__li-container").attr("style", "top:-27px;")
+                } else {
+                    $(".nav__li-container").attr("style", "top:-1000px;")
+                }            
+            });
+        });
+    </script>
     <title>Inicio - TakuGames</title>
 </head>
 <body>
     <header>
         <h1 class="desktop">TAKU GAMES</h1>
             <nav class="nav">
-                
                 <ul class="nav__ul">
                     <li class="nav__li"><a href="index.html">Inicio</a></li>
                     <li class="nav__li"><a href="productos.html">Productos</a></li>
@@ -28,7 +41,10 @@
                 <ul class="nav__responsive-ul ">
                     <div class="nav__responsive-button-container">
                         <h1>TAKU GAMES</h1>
-                        <div class="nav__responsive-button fa-solid fa-bars"></div>
+                        <input type="checkbox" id="btn-menu">
+                        <label class="nav__responsive-button" for="btn-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
                     </div>
                     <div class="nav__li-container">
                         <li class="nav__responsive-li"><a href="index.html">Inicio</a></li>
@@ -37,9 +53,6 @@
                     </div>
                 </ul>
             </nav>
-
-
-
     </header>
     <div class="principal">
         <div class="slideshow-container">
