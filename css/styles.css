@@ -244,8 +244,16 @@ img {vertical-align: middle;}
     display: none;
 }
 
+header h1 a{
+    text-decoration: none;
+    color:#2b2a2a
+}
+
 @media (max-width: 720px) {
 
+    .principal {
+        padding-left: 12px;
+    }
 
     h1.desktop{
         display: none;
@@ -298,7 +306,7 @@ img {vertical-align: middle;}
     }
 
     .principal h4 {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
 
     .destacados {
@@ -330,4 +338,35 @@ img {vertical-align: middle;}
     .nosotros p {
         font-size: 1em;
     }
+
+    p.cat-titulo{
+        margin-top: 5%;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
+    }
+
+    .producto {
+        height: auto;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: bolder;
+        font-size: 1em;
+        padding: 3%;
+    }
+    
+    .producto img {
+        width: 95%;
+        height: 80%;
+        object-fit: cover;
+        border: 3px solid #dbb4d1;
+        border-radius: 12px;
+    }
+
+    #categorias a {
+        font-size: 1.3em;
+    }
+
 }
