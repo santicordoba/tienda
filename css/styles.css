@@ -62,9 +62,16 @@ header h1{
     margin-bottom: 50px;
 }
 
+.principalForm {
+    padding-top: 5%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
 body h4{
     font-family: 'Permanent Marker', cursive;
-    font-size: 1.8em;
+    font-size: 1.7em;
     background-size: 100% 83%;
     background-image:linear-gradient(to bottom,transparent 0 65%, #b6e4b4 65% 100%);
     max-width: fit-content;
@@ -238,6 +245,7 @@ img {vertical-align: middle;}
     height: calc(100vh);
     transition: all 1s;
     width: 75%;
+    list-style: none;
 }
 
 #btn-menu {
@@ -246,13 +254,40 @@ img {vertical-align: middle;}
 
 header h1 a{
     text-decoration: none;
-    color:#2b2a2a
+    color:#2b2a2a;
+}
+
+#botonForm{
+    background-color: #d8b6e9;
+    border-color: #766088;
+}
+
+#botonForm:hover{
+    background-color: #c1a1d1;
+}
+
+#textArea{
+    height: 200px;
 }
 
 @media (max-width: 720px) {
 
     .principal {
         padding-left: 12px;
+        width: 100%;
+    }
+
+    .principal h4 {
+        font-size: 1.4em;
+        padding-left: 0px;
+    }
+
+    .principalForm {
+        width: 100%;
+    }
+
+    .principalForm h4 {
+        font-size: 1.4em;
     }
 
     h1.desktop{
@@ -276,6 +311,7 @@ header h1 a{
         z-index: 1;
         margin-top: 37px;
         padding-top: 27px;
+        padding-left: 0!important;
     }
 
     .nav__responsive-button-container h1 {
@@ -294,19 +330,11 @@ header h1 a{
     }
 
     .nav__responsive-li a {
-        text-decoration: none;
+        text-decoration: none !important;
         color: black;
         text-transform: uppercase;
         background-size: 100% 83%;
         background-image:linear-gradient(to bottom,transparent 0 65%, #ffe164 65% 100%);
-    }
-
-    .principal {
-        width: 100%;
-    }
-
-    .principal h4 {
-        font-size: 1.4em;
     }
 
     .destacados {
@@ -367,6 +395,10 @@ header h1 a{
 
     #categorias a {
         font-size: 1.3em;
+    }
+
+    #mapa{
+        width: 300px;
     }
 
 }
