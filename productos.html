@@ -9,20 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e20f85be7b.js" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#btn-menu").click(function(){
-                console.log("hola mundo");
-                var checkBox = document.getElementById("btn-menu");
-                if(checkBox.checked == true){
-                    $(".nav__li-container").attr("style", "top:-27px;")
-                } else {
-                    $(".nav__li-container").attr("style", "top:-1000px;")
-                }            
-            });
-        });
-    </script>
+    <script defer src="js/menu.js"></script>
     <title>Productos - TakuGames</title>
 </head>
 <body>

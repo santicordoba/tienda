@@ -13,19 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/e20f85be7b.js" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#btn-menu").click(function(){
-                console.log("hola mundo");
-                var checkBox = document.getElementById("btn-menu");
-                if(checkBox.checked == true){
-                    $(".nav__li-container").attr("style", "top:-27px;")
-                } else {
-                    $(".nav__li-container").attr("style", "top:-1000px;")
-                }            
-            });
-        });
+    <script defer src="js/menu.js">
     </script>
     <title>Inicio - TakuGames</title>
 </head>
