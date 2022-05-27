@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e20f85be7b.js" crossorigin="anonymous"></script>
     <script defer src="js/menu.js"></script>
+    <script src="js/validation.js"></script>
     <title>Contacto - TakuGames</title>
 </head>
 <body>
@@ -43,37 +44,37 @@
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <h4>FORMULARIO DE CONTACTO</h1>
-                    <form>
+                    <form id="forumulario">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre">
+                            <input type="text" class="form-control" id="nombre" required>
                           </div>
                         <div class="mb-3">
                           <label for="email" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
                           <div id="emailHelp" class="form-text">Dejanos tu Email para que podamos contactarte.</div>
                         </div>
                         <div id="texto" class="form-text">Selecciona el motivo de tu consulta</div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="radCompra">
+                            <input class="form-check-input" value="Consulta sobre Compra" type="radio" name="flexRadioDefault" id="radCompra" >
                             <label class="form-check-label" for="radCompra">
                               Compra
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="radVenta">
+                            <input class="form-check-input" value="Consulta sobre Venta" type="radio" name="flexRadioDefault" id="radVenta" >
                             <label class="form-check-label" for="radVenta">
                               Venta
                             </label>
                           </div>
                           <div class="form-row mt-2 mb-2">
                             <div class="col form-label">
-                                <textarea name="text" id="textArea" class="form-control form-control-lg" id="" placeholder="Dejanos tu consulta"></textarea>
+                                <textarea name="text" id="textArea" class="form-control form-control-lg" placeholder="Dejanos tu consulta" required></textarea>
                                 <small class="form-text text-muted">Dejanos tu consulta y en breve nos comunicaremos con vos.</small>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-2 offset-4" id="botonForm">Enviar Consulta</button>
-                      </form>
+                        <button type="submit" id="boton" class="btn btn-primary mt-2 offset-4">Enviar Consulta</button>
+                    </form>
                 </div>
                 <div class="col-12 col-lg-4 ms-lg-4 mt-4 mt-md-4 mt-lg-0">
                     <h4>Nuestro Local</h4>

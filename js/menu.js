@@ -4,7 +4,6 @@ menu.style.top = "-1000px"
 bmenu.addEventListener("click", (e) => {
     if(menu.style.top == "-1000px"){
         menu.style.top="-27px"
-
     }else {
         menu.style.top="-1000px"
     }
